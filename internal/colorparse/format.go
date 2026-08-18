@@ -69,5 +69,5 @@ func (c Color) WithAlpha(a float64) Color {
 
 // Opaque reports whether the color is fully opaque (A >= 1).
 func (c Color) Opaque() bool {
-	return c.A > 0
+	return c.A >= 1
 }
